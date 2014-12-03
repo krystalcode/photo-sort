@@ -9,7 +9,7 @@ $number    = 1;
 // Get list of files in the given folder.
 // Defaults to the folder that the script is located.
 // Change this to folder that holds the images, if different.
-$folder = dirname(__FILE__) . '/';
+$folder = dirname(__FILE__).'/';
 $files  = scandir($folder);
 
 // Remove from the $files array files that are not images.
@@ -28,7 +28,8 @@ foreach ($files as $file) {
 }
 
 // Checks if a file is an image simply by checking it's extension.
-function isImage($file) {
+function isImage($file)
+{
     return in_array(pathinfo($file, PATHINFO_EXTENSION), array('jpg', 'JPG'));
 }
 
