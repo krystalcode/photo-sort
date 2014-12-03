@@ -31,6 +31,7 @@ By default the script will loop through all image/photo files in the folder with
 * The script requires that all image/photo files contain information about their creation date and time. Technically it requires that all files have valid Exif Data with a valid DateTime property.
 * The script will not run recursively and will not process files within sub-folders.
 * There is currently no option to keep part of the original file names.
+* It detects only files with .jpg or .JPG extension. It may be easily made to work with other file formats but it hasn't been tested yet.
 
 ## Contribution guidelines ##
 
